@@ -23,10 +23,10 @@
     name: common
     tasks_from: app-pre-req
 
-- name: Install dependencies
-  ansible.builtin.command: npm install
-  args:
-    chdir: /app
+# - name: Install dependencies
+#   ansible.builtin.command: npm install
+#   args:
+#     chdir: /app
 
 - name: Copy backend service
   ansible.builtin.template:
